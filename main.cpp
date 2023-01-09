@@ -42,6 +42,19 @@ int main(int argc, const char* argv[])
     p->setLatitude(10.3); p->setLongitude(10.4);
     cout << p->getLatitude() << " " << p->getLongitude() << endl;
     
+    // Question 5
+    BaseClass **base_class_array = new BaseClass *[3];
+
+    base_class_array[2] = new Video("Video 1", "videos/video1", 10);
+    base_class_array[0] = new Photo("Photo 1", "images/MRI_brain_sag.png", 0.1, 0.01);
+    base_class_array[1] = new Photo("Photo 2", "images/peppers_gt.png", 0.2, 0.02);
+
+    for (int i=0; i<3; i++){
+        base_class_array[i]->display(cout);
+        base_class_array[i]->play();
+    }
+
+    delete [] base_class_array;
 
     return 0;
 }
