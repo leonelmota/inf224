@@ -35,9 +35,10 @@ public:
     void setPathname (string pathname);
     
     // Display
-    void display(ostream & stream) const;
+    virtual void display(ostream & stream) const = 0;
 
-
+    // Play
+    virtual void play() const = 0;
 };
 
 #endif 

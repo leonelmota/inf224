@@ -23,5 +23,5 @@ void BaseClass::setPathname (string pathname){
 
 // Display
 void BaseClass::display (ostream & stream) const{
-    stream << "Name: " << this->name << ", Pathname: " << this->pathname << "\n";
+    stream << "Name: " << this->name << ", Pathname: " << this->pathname << ", ";
 }
