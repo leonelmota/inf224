@@ -8,6 +8,7 @@ using std::string;
 using std::ostream;
 
 class BaseClass{
+private:
 
     string name = "";
     string pathname = "";
@@ -15,11 +16,11 @@ class BaseClass{
 public:
 
     // Constructor without arguments
-    BaseClass(): name(""), pathname(""){
+    BaseClass(): name{""}, pathname{""}{
     }
 
     // Constructor with arguments
-    BaseClass(string name, string pathname): name(name), pathname(pathname) {
+    BaseClass(string name, string pathname): name{name}, pathname{pathname} {
     }
 
     // Destructor
@@ -34,7 +35,7 @@ public:
     void setPathname (string pathname);
     
     // Display
-    virtual void display(ostream & stream) const = 0;
+    void display(ostream & stream) const;
 
 
 };
