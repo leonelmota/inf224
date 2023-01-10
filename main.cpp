@@ -45,7 +45,7 @@ int main(int argc, const char* argv[])
     // Question 5
     BaseClass **base_class_array = new BaseClass *[3];
 
-    base_class_array[2] = new Video("Video 1", "videos/video1", 10);
+    base_class_array[2] = new Video("Video 1", "videos/video1.flv", 10);
     base_class_array[0] = new Photo("Photo 1", "images/MRI_brain_sag.png", 0.1, 0.01);
     base_class_array[1] = new Photo("Photo 2", "images/peppers_gt.png", 0.2, 0.02);
 
