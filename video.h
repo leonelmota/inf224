@@ -12,6 +12,7 @@ class Video: public BaseClass{
 
 private:
     int duration = 0;
+    int times_played = 0;
 
 public:
     // Constructor without arguments
